@@ -9,6 +9,7 @@
   <title><?php echo $title ?></title>
 </head>
 <body>
+
 <div class="nav-content">
       <ul class="tabs">
         <li class="tab"><a href="#Accueil">Accueil</a></li>
@@ -17,6 +18,7 @@
         <li class="tab"><a href="#test4">Admin</a></li>
       </ul>
     </div>
+    <div class="photo"><img src="../images/Photo_ronde.png" alt="Photo de Jean"></div>
   
   
   <script

@@ -1,0 +1,31 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #051937, #061835, #061832, #061730, #07162e);
+}
+
+.tabs {
+  background-color: #263856;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tabs .tab a {
+  color: white;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  color: #5EB1BF;
+}
+
+.tabs .tab a:focus.active {
+  background-color: transparent;
+}
+
+.tabs .indicator {
+  background-color: #5EB1BF;
+}
+
+.test {
+  color: white;
+}

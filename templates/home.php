@@ -19,7 +19,9 @@
       </ul>
     </div>
     <div class="photo"><img src="../images/Photo_ronde.png" alt="Photo de Jean"></div>
-  
+    <div class="background">
+  <img src="../images/background.jpg" alt="background">
+</div>
   
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"

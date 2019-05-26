@@ -13,7 +13,7 @@
 <div class="nav-content">
       <ul class="tabs">
         <li class="tab"><a href="#Accueil">Accueil</a></li>
-        <li class="tab"><a href="#/chapitres">Derniers Chapitres</a></li>
+        <li class="tab"><a href="#/chapitres">Chapitres</a></li>
         <li class="tab"><a href="#test3">A propos</a></li>
         <li class="tab"><a href="#test4">Admin</a></li>
       </ul>

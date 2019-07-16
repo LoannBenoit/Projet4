@@ -8,13 +8,6 @@
   <link rel="stylesheet" href="../css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title><?php echo $title ?></title>
-  <?php
-  $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-  
-  $url = $protocol . $_SERVER['HTTP_HOST'] . '/admin';
-
-  $query = $_SERVER['QUERY_STRING'];
-  ?>
 </head>
 
 <body>
@@ -39,7 +32,9 @@
     <div class="chapter">
       <div class="chaptersTitle"><h2>Derniers Chapitres</h2></div>
         <div class="lightBack">
-        <?php require('../templates/chapitres.php');?>
+        
+      <?php require('../templates/chapitres.php'); ?>
+        
       </div>
     </div>
 

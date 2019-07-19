@@ -1,10 +1,10 @@
 <?php 
     $title = "Un billet pour l'Alaska | Accueil";
+    
     require('../model/Chapitres.php');
-
-    function readChapters()
-    {
-        $req = getChapters();
-    }
-
+        $read = new Chapters();
+        $req = $read->getChapters();
+        
     require('../templates/accueil.php');
+
+

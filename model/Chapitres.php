@@ -1,11 +1,12 @@
 <?php
 class Chapters  
 {
-  private function dbConnect()
+  private $bdd;
+  function __construct()
   {
     try
     {
-      $bdd = new PDO('mysql:host=localhost;dbname=blog;charset=utf8', 'root', 'root');
+      $this->bdd = new PDO('mysql:host=localhost;dbname=blog;charset=utf8', 'root', 'root');
     }
     catch (Exception $e)
     {
@@ -15,8 +16,8 @@ class Chapters
 
   public function getChapters()
   {
-    $db = $this->dbConnect();
-    $req = $bdd->query('SELECT * DATE_FORMAT(published, \'%d/%m/%Y\') AS published FROM chapitres ORDER BY id DESC');
+    
+    $req = $this->bdd->query('SELECT * FROM chapitres');
 
     return $req;
   }

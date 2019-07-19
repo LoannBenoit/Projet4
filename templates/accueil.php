@@ -12,17 +12,6 @@
 
 <body>
 
-<nav>
-  <div class="nav-content">
-    <ul class="tabs">
-      <li class="tab"><a href="#" class="active">Accueil</a></li>
-      <li class="tab"><a href="#chapters">Chapitres</a></li>
-      <li class="tab"><a href="#mores">À propos</a></li>
-      <li class="tab"><a href="#admin">Admin</a></li>
-    </ul>
-  </div>
-</nav>
-
   <div id="home" class="col-s12">
     <div class="background">
       <img src="../images/background.jpg" alt="background">
@@ -34,7 +23,6 @@
         <div class="lightBack">
         
       <?php require('../templates/chapitres.php'); ?>
-        
       </div>
     </div>
 

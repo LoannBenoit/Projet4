@@ -6,5 +6,6 @@
         $req = $read->getChapters();
         
     require('../templates/accueil.php');
+    require('../templates/form.php');
 
 

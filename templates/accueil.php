@@ -47,42 +47,6 @@
     </div>
   </div>
 
-  <div class="admin">
-    <div class="adminTitle"><h2>Admin</h2></div>
-      <div class="lightBack">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="id" type="text">
-              <label for="first_name">ID</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="password" type="password" class="validate">
-              <label for="password">MOT DE PASSE</label>
-            </div>
-          </div>
-          <div class="row submit">
-            <button class="login btn waves-effect waves-light right-align" type="submit" name="action">Se Connecter</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="footer-copyright">
-      <div class="container">
-      © 2019 | <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/loann-benoit-a07a10170/">Loann BENOIT</a>
-      <a class="right" target="_blank" rel="noopener noreferrer" href="https://openclassrooms.com/fr">Ce site est un projet pour OpenClassrooms.</a>
-      </div>
-    </div>
-  </footer>
-
-
-
-    
 
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"

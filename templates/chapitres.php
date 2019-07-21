@@ -7,4 +7,3 @@
     <button class="readMore">Lire la suite</button>
   </div>
 <?php }?>
-           

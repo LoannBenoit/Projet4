@@ -13,12 +13,17 @@
 
   <div class="nav-content">
     <ul class="tabs">
-      <li class="tab"><a href="">Accueil</a></li>
-      <li class="tab"><a href="">Chapitres</a></li>
-      <li class="tab"><a href="">À propos</a></li>
-      <li class="tab"><a href="" class="active">Admin</a></li>
+    <li class="tab" ><a class="active" href="#accueil">Accueil</a></li>
+      <li class="tab"><a href="#chapitres">Chapitres</a></li>
+      <li class="tab"><a href="">Commentaires</a></li>
+      <li class="tab"><a href="" class="active">Se déconnecter</a></li>
     </ul>
   </div>
+
+  <div id="accueil" class="col s12">
+    <?php require('accueil.php')?>
+  </div>
+
 
   </body>
   </html>

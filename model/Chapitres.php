@@ -17,7 +17,7 @@ class Chapters
   public function getChapters()
   {
     
-    $req = $this->bdd->query('SELECT * FROM chapitres');
+    $req = $this->bdd->query('SELECT *, DATE_FORMAT(published, "%d/%m/%Y") AS published FROM chapitres');
 
     return $req;
   }

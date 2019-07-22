@@ -20,12 +20,6 @@ html, body, .background {
   scroll-behavior: smooth;
 }
 
-.background {
-  width: 100%;
-  height: 100%;
-  background-color: linear-gradient(to bottom, #182B4B, #001a40);
-}
-
 .nav-content {
   height: 80px;
   position: fixed;
@@ -71,12 +65,13 @@ html, body, .background {
 
 .background {
   display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-#home, #chapitres {
+#content {
   width: 100%;
   height: 100%;
 }
@@ -87,13 +82,7 @@ html, body, .background {
   height: auto;
 }
 
-.background {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
-
-.homeTitle, #home h2 {
+.homeTitle, #content h2, .moreTitle, .adminTitle {
   color: white;
   position: relative;
   margin: auto;
@@ -157,9 +146,8 @@ html, body, .background {
 
 .readMore {
   background: #182B4B;
-  border: none;
+
   color: white;
-  padding: 10px 20px;
 }
 
 
@@ -167,7 +155,7 @@ html, body, .background {
 /* More part */
 
 .moreTitle {
-  margin: 5% auto 5%;
+  margin: 0% auto 5%;
 }
 
 .photoJF {
@@ -234,14 +222,17 @@ html, body, .background {
   background-color: #5EB1BF;
 }
 
-footer {
-  background: #263856;
+
+
+/* Admin Part */
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
-footer .container, .container a {
-  color: white;
-}
-
-.container a:hover {
-color: #5EB1BF;
+#test1 {
+  width: 100%;
+  height: 100%;
 }

@@ -4,6 +4,6 @@
     <h3 class="chapterAmount"><?php echo $data['name']; ?></h3>
     <p class="publishDate">Publié le <?php echo $data['published']; ?></p>
     <p class="truncate"><?php echo $data['text']; ?></p>
-    <button class="readMore">Lire la suite</button>
+    <a href="../chapitres/chapitre.php?<?php echo $data['id']; ?>" class="waves-effect waves-teal btn-flat readMore">Lire la suite</a>
   </div>
 <?php }?>

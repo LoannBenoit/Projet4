@@ -146,8 +146,21 @@ html, body, .background {
 
 .readMore {
   background: #182B4B;
-
   color: white;
+}
+
+.backHome {
+  color: white;
+  background: #5EB1BF;
+  border: none;
+  box-shadow: none;
+  margin: 30px;
+}
+
+.backHome:hover {
+  background: #5EB1BF;
+  border: none;
+  box-shadow: none;
 }
 
 

@@ -1,8 +1,9 @@
 <?php 
-$title = "Un billet pour l'Alaska | Admin";
+$title = "Admin | Un billet pour l'Alaska";
 
 require('../model/Chapitres.php');
   $read = new Chapters();
-  $req = $read->getChapters();
+  $req = $read->getChapters($_GET['n']);
+
 
 require('../templates/admin.php');

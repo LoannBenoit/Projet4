@@ -82,7 +82,7 @@ html, body, .background {
   height: auto;
 }
 
-.homeTitle, #content h2, .moreTitle, .adminTitle {
+.homeTitle, #content h2, .moreTitle, .adminTitle, .commentTitle {
   color: white;
   position: relative;
   margin: auto;
@@ -108,6 +108,8 @@ html, body, .background {
 }
 
 .lightBack {
+  display: flex;
+  flex-direction: column;
   margin: 0px auto;
   margin-bottom: 50px;
   padding: 20px 0px 30px 0px;
@@ -150,20 +152,90 @@ html, body, .background {
 }
 
 .backHome {
+  width: 19%;
   color: white;
-  background: #5EB1BF;
+  background: #182B4B;
   border: none;
   box-shadow: none;
-  margin: 30px;
+  margin: 0px 0px 0px 5%;
+
 }
 
-.backHome:hover {
-  background: #5EB1BF;
+.backHome:hover, .readMore:hover {
+  background: #001a40;
   border: none;
   box-shadow: none;
 }
 
+.postText {
+  text-align: justify;
+}
 
+.commentSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.commentTitle {
+  margin-bottom: 20px;
+}
+.commentName {
+  font-family: 'BIGJOHN';
+  font-size: 1.5em;
+  margin: 3% 0px 0px 0px;
+  padding-left: 5%;
+}
+
+.commentContent {
+  font-family: 'Moon2.0-Light';
+  margin: 0px;
+  padding-left: 5%;
+}
+
+.report {
+  width: 8%;
+  align-self: flex-end;
+  margin: 0px 5% 0% 0px;
+}
+
+.comment .separator {
+  margin-top: 10px;
+}
+
+#commentForm {
+  width: 90%;
+  margin: auto;
+}
+
+.addComment {
+  width: 50%;
+}
+
+.addComment input {
+  color: white;
+}
+
+.input-field label {
+  color: white;
+}
+
+input[type=text]:not(.browser-default):not([readonly]):focus + label, input[type=password]:not(.browser-default):not([readonly]):focus + label, .input-text textarea:not([readonly]):focus + label {
+  color: white;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):not([readonly]):focus, .input-field textarea:not([readonly]):focus {
+	border-bottom: 1px solid #001a40;
+	box-shadow: 0 1px 0 0 #001a40;
+}
+
+  
 
 /* More part */
 
@@ -224,7 +296,7 @@ html, body, .background {
   margin: 0px;
 }
 
-.login {
+.login, .sendComment {
   background-color: #182B4B;
   font-family: 'Moon2.0-Light';
   float: right;
@@ -243,9 +315,4 @@ html, body, .background {
   width: 100%;
   height: 100%;
   display: flex;
-}
-
-#test1 {
-  width: 100%;
-  height: 100%;
 }

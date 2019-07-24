@@ -4,5 +4,11 @@ require('../model/Chapitres.php');
   $req = $read->getFullChapter($_GET['n']);
   $post = $req;
 
+        
+  require('../model/Commentaires.php');
+  $read = new CommentManager();
+  $req = $read->getComments($_GET['n']);
+  $comments = $req;
+
   require('../templates/post.php');
 ?>

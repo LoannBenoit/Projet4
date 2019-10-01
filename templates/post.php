@@ -35,7 +35,7 @@
 
         <div class="row addComment">
           <div class="lightBack">
-            <form id="commentForm" class="col s12" action="../commentaires/addComment.php">
+            <form id="commentForm" class="col s12" action="../chapitres/chapitres.php?n=<?php echo $_GET['n']?>" method="post">
               <div class="row">
                 <div class="input-field col s12">
                   <input id="name" type="text" name="name">
@@ -44,8 +44,8 @@
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <textarea id="commentText" class="materialize-textarea"></textarea>
-                  <label for="commentText">COMMENTAIRE</label>
+                  <textarea id="commentText" name="commentText" class="materialize-textarea"></textarea>
+                  <label class="txtAreaLabel" for="commentText">COMMENTAIRE</label>
                 </div>
               </div>
               <div class="row submitComment">

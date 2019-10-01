@@ -14,22 +14,26 @@ class CommentManager
     }
   }
 
-  public function getComments($postId)
+  public function getComments($idChapitre)
   {
-      $req = $this->$bdd->prepare("SELECT * FROM commentaires WHERE idChapitres = $postId");
-      $req->execute(array($postId));
+      $req = $this->$bdd->prepare("SELECT * FROM commentaires WHERE idChapitres = '$idChapitre'");
+      $req->execute(array($idChapitre));
 
       return $req;
+
   }
+  
+ 
+  public function postComment($name, $commentText, $postId)
+  {
 
-  public function postComment($postId, $author, $comment)
-    {
-
-        $req = $this->$bdd->prepare('INSERT INTO commentaires(idChapitre, name, content) VALUES(?, ?, ?)');
-        $affectedLines = $comments->execute(array($postId, $author, $comment));
-
-        return $affectedLines;
+      $req = $this->$bdd->prepare("INSERT INTO commentaires(name, content, idChapitres) VALUES(:name, :commentText, :postId)");
+      $req->bindParam(':name', $name);
+      $req->bindParam(':commentText', $commentText);
+      $req->bindParam(':postId', $postId);
+   
+      $req->execute();
+  
     }
 
-  
 }

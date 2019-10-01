@@ -226,7 +226,11 @@ html, body, .background {
   color: white;
 }
 
-input[type=text]:not(.browser-default):not([readonly]):focus + label, input[type=password]:not(.browser-default):not([readonly]):focus + label, .input-text textarea:not([readonly]):focus + label {
+input[type=text]:not(.browser-default):not([readonly]):focus + label, input[type=password]:not(.browser-default):not([readonly]):focus + label, .input-field textarea:not([readonly]):focus +label {
+  color: white;
+}
+
+textarea.materialize-textarea {
   color: white;
 }
 
@@ -303,8 +307,8 @@ input[type=text]:not(.browser-default):focus:not([readonly]), input[type=passwor
   margin-right: 10px;
 }
 
-.login:hover {
-  background-color: #5EB1BF;
+.login:hover, .sendComment:hover {
+  background-color: #001a40;
 }
 
 

@@ -6,7 +6,7 @@ class CommentManager
   {
     try
     {
-      $this->$bdd = new PDO('mysql:host=localhost;dbname=blog;charset=utf8', 'root', 'root');
+      $this->$bdd = new PDO('mysql:host=localhost:8888;dbname=clients;charset=utf8', 'root', 'root');
     }
     catch (Exception $e)
     {
